@@ -1,9 +1,8 @@
-import React from "react";
+import Banner from "./index"
+import BannerDescription from "./BannerDescription"
+import BannerTitle from "./BannerTitle"
 
-export default function(){
-    return (
-        <div>
-            
-        </div>
-    )
-}
+Banner.Desc = BannerDescription
+Banner.Title = BannerTitle
+
+export default Banner

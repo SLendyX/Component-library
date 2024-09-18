@@ -5,6 +5,8 @@ import Menu from "./components/Menu/index"
 import Star from "./components/Star"
 import './style.css'
 import Badge from "./components/Badges/Badges"
+import Banner from "./components/Banners/Banners"
+import Card from "./components/Cards/Card"
 
 function App() {
 
@@ -22,7 +24,17 @@ function App() {
         Hello
       </Badge>
 
-    
+      <Banner type="error">
+        <Banner.Title>
+          Error 404
+        </Banner.Title>
+
+        <Banner.Desc>
+          Cannot access server
+        </Banner.Desc>
+      </Banner>
+
+      <Card></Card>
 
     </>
   )

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.banner .icon{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.banner .success-icon{
+    color: #34D399;
+}
+
+.banner .attention-icon{
+    color: #FBBF24;
+}
+
+.banner .error-icon{
+    color: #F87171;
+}
+
+.banner .neutral-icon{
+    color: #60A5FA;
+}
+
+.banner-success{
+    background: #ECFDF5;
+    color: #047857;
+}
+
+.banner-attention{
+    background: #FFFBEB;
+    color: #B45309;
+}
+
+.banner-error{
+    background: #FEF2F2;
+    color: #B45309;
+}
+
+.banner-neutral{
+    background: #EFF6FF;
+    color: #1C51B9;
+}
+
+.banner{
+    padding: 1em 1em 1em 3em;
+    position: relative;
+    font-family: "Inter", system-ui;
+    border-radius 6px;
+}
+
+.banner > .description{
+    margin-bottom: 0;
+}
+
+.banner > .header{
+    margin: 0;
+    font-weight: 500;
+}
+
