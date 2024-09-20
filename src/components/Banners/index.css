@@ -48,7 +48,7 @@
     padding: 1em 1em 1em 3em;
     position: relative;
     font-family: "Inter", system-ui;
-    border-radius 6px;
+    border-radius: 6px;
 }
 
 .banner > .description{

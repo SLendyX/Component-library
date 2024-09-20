@@ -6,7 +6,9 @@ import Star from "./components/Star"
 import './style.css'
 import Badge from "./components/Badges/Badges"
 import Banner from "./components/Banners/Banners"
-import Card from "./components/Cards/Card"
+import Card from "./components/Cards/Cards"
+import Testimonial from './components/Testimonials/Testimonial'
+import image from "./image.png"
 
 function App() {
 
@@ -34,7 +36,36 @@ function App() {
         </Banner.Desc>
       </Banner>
 
-      <Card></Card>
+      <br/><br/>
+
+      <Card>
+        <Card.Title>
+          Easy Deployment
+        </Card.Title>
+        <Card.Desc>
+          Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. 
+          Et magna sit morbi lobortis.
+        </Card.Desc>
+      </Card>
+
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+
+      <Testimonial src={image}>
+        <Testimonial.Quote>
+          Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit. 
+          Sed urna nulla vitae laoreet augue. 
+          Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+          </Testimonial.Quote>
+          <Testimonial.Footer>
+            <Testimonial.Author>
+              May Andersons
+            </Testimonial.Author>
+            <Testimonial.Company>
+              Workcation, CTO
+            </Testimonial.Company>
+          </Testimonial.Footer>
+      </Testimonial>
 
     </>
   )

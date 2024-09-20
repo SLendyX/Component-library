@@ -5,7 +5,7 @@ import Attention from "./icons/Attention";
 import Neutral from "./icons/Neutral";
 import "./index.css"
 
-export default function Banners({ type = "success", children }) {
+export default function Banners({ type = "success", children, className = "", ...props }) {
     const components = {
         Success: Success,
         Attention: Attention,
@@ -21,7 +21,7 @@ export default function Banners({ type = "success", children }) {
     }
 
     return (
-        <div className={`banner banner-${type}`}>
+        <div className={`banner banner-${type} ${className}`} {...props}>
             {createComponent(type)}
             {children}
         </div>
