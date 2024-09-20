@@ -1,7 +1,10 @@
 import React from "react";
 
-export default function({children, className = "", ...props}){
+export default function({children, className = "", logo,...props}){
     return (
-        <div className={"testimonial" + className} {...props}>{children}</div>
+        <div className={"testimonial" + className} {...props}>
+            {logo && <img className="testimonial-logo" src={logo}/>}
+            {children}
+        </div>
     )
 }

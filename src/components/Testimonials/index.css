@@ -10,6 +10,9 @@
     height: 3em;
 }
 
+.testimonial-container{
+    width: 95%;
+}
 
 .testimonial--image{
     background-color: #2545B8;
@@ -19,6 +22,7 @@
 
 .testimonial-image{
     width: 91%;
+    max-width: 384px;
     height: var(--picture-height);
     border-radius: 12px;
     position: absolute;
@@ -32,12 +36,19 @@
 
 .testimonial--image, .testimonial{
     padding: 9.4375em 1em 4em;
-    width: 95%;
+    width: 100%;
     font-family: "Inter", system-ui;
 }
 
 .testimonial{
     padding-top: 4.625em;
+    background-color: #F9FAFB;
+    color: #111827;
+}
+
+.testimonial-logo{
+    display: block;
+    margin: 0 auto 2.5em;
 }
 
 .testimonial-quote{
@@ -46,7 +57,15 @@
     line-height: 2;
 }
 
-.testimonial-fotoer{
+.testimonial .testimonial-quote::after{
+    content: '”';
+}
+
+.testimonial .testimonial-quote::before{
+    content: '“';
+}
+
+.testimonial-footer{
     margin-top: 1.5em;
 }
 
@@ -65,19 +84,61 @@
     font-weight: 500;
 }
 
-@media(min-width: 376px){
-    .testimonial--image,
-    .testimonial{
+.testimonial .testimonial-company{
+    color: #6B7280;
+}
+
+@media(min-width: 500px){
+    .testimonial--image{
         padding: 5em 4.4375em;
+        padding-left: 40%;
         display: flex;
         align-items: center;
         max-width: 1358px;
         max-height: 400px;
+        position: unset;
+    }
+
+    .testimonial{
+        text-align: center;
+        padding-left: 25%;
+        padding-right: 25%;
+
+    }
+
+    .testimonial-container{
+        position: relative;
     }
     .testimonial-image{
-        position: unset;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
+        width:35%;
+        max-width: 384px;
+        height: 412px;
+        right:unset;
+        top:unset;
+        margin: 0 auto 0 3%;
+    }
+    .testimonial-quote{
+        font-size: 1rem;
+    }
+    .testimonial-author, 
+    .testimonial-company{
+        font-size: .8rem;
+    }
+
+    .testimonial .testimonial-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:.5em;
+    }
+
+    .testimonial .testimonial-author{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+    
+    .testimonial .testimonial-author::after{
+        content: url("../../assets/Path.svg")       
     }
 }

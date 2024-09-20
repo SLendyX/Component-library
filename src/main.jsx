@@ -8,7 +8,8 @@ import Badge from "./components/Badges/Badges"
 import Banner from "./components/Banners/Banners"
 import Card from "./components/Cards/Cards"
 import Testimonial from './components/Testimonials/Testimonial'
-import image from "./image.png"
+import image from "./assets/image.png"
+import logo from "./assets/logo.png"
 
 function App() {
 
@@ -50,7 +51,7 @@ function App() {
 
       <br/><br/><br/><br/><br/><br/><br/><br/>
 
-      <Testimonial src={image}>
+      <Testimonial logo={logo}>
         <Testimonial.Quote>
           Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit. 
@@ -67,6 +68,7 @@ function App() {
           </Testimonial.Footer>
       </Testimonial>
 
+      <br/><br/><br/><br/>
     </>
   )
 }
