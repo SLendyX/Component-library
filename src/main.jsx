@@ -10,6 +10,8 @@ import Card from "./components/Cards/Cards"
 import Testimonial from './components/Testimonials/Testimonial'
 import image from "./assets/image.png"
 import logo from "./assets/logo.png"
+import Tooltip from './components/Tooltips/Tooltip'
+
 
 function App() {
 
@@ -69,6 +71,18 @@ function App() {
       </Testimonial>
 
       <br/><br/><br/><br/>
+
+      <Tooltip color="default" mode='bold'>
+        <Tooltip.Title>
+          Archive notes
+        </Tooltip.Title>
+        <Tooltip.Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
+        </Tooltip.Text>
+      </Tooltip>
+
+      <br/><br/><br/><br/>
+
     </>
   )
 }
