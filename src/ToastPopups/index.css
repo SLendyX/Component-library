@@ -1,0 +1,57 @@
+.toastpopup-success{
+    background-color: #ECFDF5;
+    color: #047857;
+}
+
+.toastpopup-warning{
+    background-color: #FFFBEB;
+    color: #B45309;
+}
+
+.toastpopup-error{
+    background-color: #FEF2F2;
+    color: #B45309;
+}
+
+.toastpopup-information{
+    background-color: #EFF6FF;
+    color: #1C51B9;
+}
+
+.toastpopup-icon{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.toastpopup{
+    font-size: .875rem;
+    padding: 1em 1em 1em 3.25em;
+    position: relative;
+    width: 384px;
+    position: fixed;
+    top: -100px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px -2px #0000000D;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    transition: ease-in 2s;
+}
+
+.show{
+    top: 20px;
+}
+
+
+.toastpopup-title{
+    font-weight: 500;
+    margin: 0;
+    font-size: inherit;
+}
+
+.toastpopup-text{
+    margin: 0;
+    margin-top: .25em;
+}

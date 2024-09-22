@@ -11,7 +11,7 @@ import Testimonial from './components/Testimonials/Testimonial'
 import image from "./assets/image.png"
 import logo from "./assets/logo.png"
 import Tooltip from './components/Tooltips/Tooltip'
-
+import ToastPopup from './ToastPopups/ToastPopup'
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
         Hello
       </Badge>
 
-      <Banner type="error">
+      <Banner type="neutral">
         <Banner.Title>
           Error 404
         </Banner.Title>
@@ -80,6 +80,17 @@ function App() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
         </Tooltip.Text>
       </Tooltip>
+
+      <br/><br/><br/><br/>
+
+      <ToastPopup mode="error">
+        <ToastPopup.Title>
+          Warning
+        </ToastPopup.Title>
+        <ToastPopup.Text>
+          A warning
+        </ToastPopup.Text>
+      </ToastPopup>
 
       <br/><br/><br/><br/>
 
